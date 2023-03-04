@@ -58,10 +58,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_04_165505) do
   end
 
   create_table "sponsors", force: :cascade do |t|
+    t.integer "team_id"
     t.string "name"
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["team_id"], name: "index_sponsors_on_team_id"
   end
 
   create_table "teams", force: :cascade do |t|
@@ -79,7 +81,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_04_165505) do
     t.string "fa_table_division_season"
     t.string "fa_fixture_lrcode"
     t.string "fa_fixture_division_season"
-    t.text "players"
+    t.json "players"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["slug"], name: "index_teams_on_slug"

@@ -18,7 +18,7 @@ class CreateTeams < ActiveRecord::Migration[7.0]
       t.string :fa_fixture_lrcode
       t.string :fa_fixture_division_season
 
-      t.text :players
+      t.json :players
 
       t.timestamps
     end
