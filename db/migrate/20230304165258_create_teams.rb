@@ -3,7 +3,7 @@ class CreateTeams < ActiveRecord::Migration[7.0]
     create_table :teams do |t|
       t.string :slug, index: true
       t.string :name
-      
+
       t.string :manager_1_position
       t.string :manager_1_name
       t.string :manager_2_position
