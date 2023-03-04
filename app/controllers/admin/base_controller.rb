@@ -1,5 +1,10 @@
 class Admin::BaseController < ApplicationController
+  before_action :user_check
+
   helper_method :model
+
+  def welcome
+  end
 
   def index
     @records = model.all
@@ -26,5 +31,14 @@ class Admin::BaseController < ApplicationController
     @record.save!
 
     redirect_to action: "index", notice: "#{@record} was succcessfully updated."
+  end
+
+  private
+
+  def user_check
+    @user = session[:userinfo]
+    if @user.nil?
+      redirect_to "/login"
+    end
   end
 end

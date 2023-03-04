@@ -32,7 +32,28 @@
         <div class="navbar-center">
           <a class="btn-ghost btn text-xl normal-case">CCFC EJA Admin</a>
         </div>
-        <div class="navbar-end"></div>
+        <% if @user %>
+          <div class="navbar-end">
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full bg-slate-50">
+                  <img src="<%= @user["picture"] %>" />
+                </div>
+              </label>
+              <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-gray-200 text-gray-900 rounded-box w-52">
+                <li>
+                  <p>
+                    Logged in as <b><%= @user["nickname"] %></b>
+                  </p>
+                </li>
+                <li>
+                  <%= link_to 'Logout', 'auth/logout', method: :get, data: { turbo: false } %>
+                </li>
+              </ul>
+            </div>
+          <% end %>
+
+        </div>
       </div>
 
       <div class="drawer drawer-mobile">
@@ -41,21 +62,24 @@
           <!-- Page content here -->
           <%= yield %>
         </div>
-        <div class="drawer-side">
-          <label for="primary-nav-bar" class="drawer-overlay"></label>
-          <ul class="menu w-80 bg-slate-200 p-4 text-base-content">
-            <!-- Sidebar content here -->
-            <li>
-              <%= link_to "News Articles", admin_news_articles_path %>
-            </li>
-            <li>
-              <%= link_to "Teams", admin_teams_path %>
-            </li>
-            <li>
-              <%= link_to "Sponsors", admin_sponsors_path %>
-            </li>
-          </ul>
-        </div>
+
+        <% if @user %>
+          <div class="drawer-side">
+            <label for="primary-nav-bar" class="drawer-overlay"></label>
+            <ul class="menu w-80 bg-slate-200 p-4 text-base-content">
+              <!-- Sidebar content here -->
+              <li>
+                <%= link_to "News Articles", admin_news_articles_path %>
+              </li>
+              <li>
+                <%= link_to "Teams", admin_teams_path %>
+              </li>
+              <li>
+                <%= link_to "Sponsors", admin_sponsors_path %>
+              </li>
+            </ul>
+          </div>
+        <% end %>
       </div>
     </header>
   </body>
