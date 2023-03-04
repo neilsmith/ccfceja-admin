@@ -1,0 +1,15 @@
+<div class="flex justify-end">
+  <%= link_to "New #{model.model_name.human.titleize}", url_for(action: "new"), class: "btn btn-primary mb-4" %>
+</div>
+
+<div class="overflow-x-auto">
+  <table class="table w-full">
+    <!-- head -->
+    <thead>
+      <%= render partial: "header" %>
+    </thead>
+    <tbody>
+      <%= render partial: "row", collection: @records %>
+    </tbody>
+  </table>
+</div>

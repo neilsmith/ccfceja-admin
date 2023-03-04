@@ -1,0 +1,9 @@
+<h1 class="text-xl font-semibold" >Edit <%= @record.class.model_name.human.titleize %>: <%= @record %></h1>
+
+<%= form_for [:admin, @record], method: :put do |f| %>
+  <%= render partial: "form", locals: { f: f } %>
+
+  <div class="flex justify-end">
+    <%= f.submit "Save", class: "btn btn-primary mt-4" %>
+  </div>
+<% end %>

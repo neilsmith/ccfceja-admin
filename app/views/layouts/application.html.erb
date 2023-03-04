@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
   <head>
     <title>CcfcejaAdmin</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -12,8 +12,51 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
-    </main>
+    <header>
+      <div class="navbar bg-purple-500 text-white">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label for="primary-nav-bar" class="md-hide btn-ghost btn-circle btn lg:hidden">
+              <svg
+              class="swap-off fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+              </svg>
+            </label>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn-ghost btn text-xl normal-case">CCFC EJA Admin</a>
+        </div>
+        <div class="navbar-end"></div>
+      </div>
+
+      <div class="drawer drawer-mobile">
+        <input id="primary-nav-bar" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col p-6">
+          <!-- Page content here -->
+          <%= yield %>
+        </div>
+        <div class="drawer-side">
+          <label for="primary-nav-bar" class="drawer-overlay"></label>
+          <ul class="menu w-80 bg-slate-200 p-4 text-base-content">
+            <!-- Sidebar content here -->
+            <li>
+              <%= link_to "News Articles", admin_news_articles_path %>
+            </li>
+            <li>
+              <%= link_to "Teams", admin_teams_path %>
+            </li>
+            <li>
+              <%= link_to "Sponsors", admin_sponsors_path %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
   </body>
 </html>

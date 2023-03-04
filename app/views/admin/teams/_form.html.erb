@@ -1,0 +1,85 @@
+<div class="my-3 flex flex-col">
+  <%= f.label :slug, "Slug", class: "uppercase text-xs font-light mb-1" %>
+  <%= f.text_field :slug, class: "w-full lg:w-1/4" %>
+</div>
+
+<div class="my-3 flex flex-col">
+  <%= f.label :name, "Team Name", class: "uppercase text-xs font-light mb-1" %>
+  <%= f.text_field :name, class: "w-full lg:w-1/2" %>
+</div>
+
+<div class="card w-full bg-base-100 shadow-xl lg:w-3/4 mb-4">
+  <div class="card-body">
+    <h2 class="card-title">Managers</h2>
+
+    <div class="my-3 flex flex-col">
+      <%= f.label :manager_1_position, "Manager 1", class: "uppercase text-xs font-light mb-1" %>
+      <div class="flex flex-row">
+        <%= f.text_field :manager_1_position, placeholder: "Position", class: "w-1/2 lg:w-1/4 mr-2" %>
+        <%= f.text_field :manager_1_name, placeholder: "Name", class: "w-1/2 lg:w-1/2" %>
+      </div>
+    </div>
+
+    <div class="my-3 flex flex-col">
+      <%= f.label :manager_2_position, "Manager 2", class: "uppercase text-xs font-light mb-1" %>
+      <div class="flex flex-row">
+        <%= f.text_field :manager_2_position, placeholder: "Position", class: "w-1/2 lg:w-1/4 mr-2" %>
+        <%= f.text_field :manager_2_name, placeholder: "Name", class: "w-1/2 lg:w-1/2" %>
+      </div>
+    </div>
+
+    <div class="my-3 flex flex-col">
+      <%= f.label :manager_3_position, "Manager 3", class: "uppercase text-xs font-light mb-1" %>
+      <div class="flex flex-row">
+        <%= f.text_field :manager_3_position, placeholder: "Position", class: "w-1/2 lg:w-1/4 mr-2" %>
+        <%= f.text_field :manager_3_name, placeholder: "Name", class: "w-1/2 lg:w-1/2" %>
+      </div>
+    </div>
+
+    <div class="my-3 flex flex-col">
+      <%= f.label :manager_4_position, "Manager 4", class: "uppercase text-xs font-light mb-1" %>
+      <div class="flex flex-row">
+        <%= f.text_field :manager_4_position, placeholder: "Position", class: "w-1/2 lg:w-1/4 mr-2" %>
+        <%= f.text_field :manager_4_name, placeholder: "Name", class: "w-1/2 lg:w-1/2" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card w-full bg-base-100 shadow-xl lg:w-3/4 mb-5">
+  <div class="card-body">
+    <h2 class="card-title">FA Full Time Codes</h2>
+
+    <div class="my-3 flex flex-col">
+      <%= f.label :fa_table_lrcode, "Table LR Code / Division Season", class: "uppercase text-xs font-light mb-1" %>
+      <div class="flex flex-row">
+        <%= f.text_field :fa_table_lrcode, placeholder: "LR Code", class: "w-1/2 mr-2" %>
+        <%= f.text_field :fa_table_division_season, placeholder: "Division Season", class: "w-1/2" %>
+      </div>
+    </div>
+
+    <div class="my-3 flex flex-col">
+      <%= f.label :fa_table_lrcode, "Fixtures LR Code / Division Season", class: "uppercase text-xs font-light mb-1" %>
+      <div class="flex flex-row">
+        <%= f.text_field :fa_fixture_lrcode, placeholder: "LR Code", class: "w-1/2 mr-2" %>
+        <%= f.text_field :fa_fixture_division_season, placeholder: "Division Season", class: "w-1/2" %>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mt-5 flex flex-col">
+  <%= f.label :players_as_paragraph, "Players", class: "uppercase text-xs font-light mb-1" %>
+  <%= f.text_area :players_as_paragraph, class: "w-full lg:w-1/2 h-96" %>
+</div>
+
+<div class="mt-5 flex flex-col">
+  <%= f.label :team_photo, "Team Photo", class: "uppercase text-xs font-light mb-1" %>
+  <div class="avatar">
+    <div class="w-32 rounded">
+      <%= image_tag @record.team_photo %>
+    </div>
+  </div>
+  <%= f.file_field :team_photo, class: "file-input w-full lg:w-1/2" %>
+</div>

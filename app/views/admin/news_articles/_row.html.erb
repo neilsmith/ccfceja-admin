@@ -1,0 +1,8 @@
+<tr>
+  <td><%= row.title %></td>
+  <td><%= row.author %></td>
+  <td><%= row.published_at %></td>
+  <td>
+    <%= link_to "Edit", edit_admin_news_article_path(row), class: "btn btn-primary btn-xs" %>
+  </td>
+</tr>

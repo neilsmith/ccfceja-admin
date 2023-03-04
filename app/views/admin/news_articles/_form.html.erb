@@ -1,0 +1,19 @@
+<div class="my-3 flex flex-col">
+  <%= f.label :title, "Title", class: "uppercase text-xs font-light mb-1" %>
+  <%= f.text_field :title, class: "w-full lg:w-1/2" %>
+</div>
+
+<div class="my-3 flex flex-col">
+  <%= f.label :author, "Author", class: "uppercase text-xs font-light mb-1" %>
+  <%= f.text_field :author, class: "w-full lg:w-1/2" %>
+</div>
+
+<div class="my-3 flex flex-col">
+  <%= f.label :published_at, "Publish Date", class: "uppercase text-xs font-light mb-1" %>
+  <%= f.date_field :published_at, class: "w-full lg:w-1/2" %>
+</div>
+
+<div class="mt-5 flex flex-col">
+  <%= f.label :content, "Article Text", class: "uppercase text-xs font-light mb-1" %>
+  <%= f.rich_text_area :content, class: "w-full h-96" %>
+</div>
