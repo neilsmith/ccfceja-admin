@@ -1,0 +1,164 @@
+{
+  "teams": [
+    {
+      "slug": "u13",
+      "name": "U13",
+      "manager_1_position": "Manager",
+      "manager_1_name": "Andrew Warley",
+      "manager_2_position": "Coach",
+      "manager_2_name": "Rui Costa",
+      "description": "",
+      "fa_embeds": {
+        "table": { "lrcode": "730265768", "divisionseason": "531020832" },
+        "fixtures": { "lrcode": "708280924", "divisionseason": "531020832" }
+      },
+      "players": [
+        { "number": "1", "name": "Max Wright" },
+        { "number": "2", "name": "Daniel Norton" },
+        { "number": "3", "name": "George Parlour" },
+        { "number": "4", "name": "Sam Steadman" },
+        { "number": "5", "name": "Arthur Tilley" },
+        { "number": "7", "name": "Albie Thomson" },
+        { "number": "8", "name": "Thomas Warley" },
+        { "number": "9", "name": "Charlie Masters" },
+        { "number": "10", "name": "Jared Callan" },
+        { "number": "12", "name": "Eric Costa" },
+        { "number": "14", "name": "Finlay Carter" },
+        { "number": "15", "name": "William McGuigan" },
+        { "number": "16", "name": "Templeton Spreadborough" },
+        { "number": "17", "name": "Zack Hewstone" },
+        { "number": "18", "name": "Will Martin" },
+        { "number": "19", "name": "Adam Cooney" }
+      ]
+    },
+    {
+      "slug": "u14",
+      "name": "U14",
+      "manager_1_position": "Manager",
+      "manager_1_name": "Tony Amato",
+      "manager_2_position": "Assistant Manager",
+      "manager_2_name": "Gavin Brian",
+      "description": "",
+      "photo": "/photos/u14.jpg",
+      "fa_embeds": {
+        "table": { "lrcode": "419589437", "divisionseason": "489776589" },
+        "fixtures": { "lrcode": "139871309", "divisionseason": "489776589" }
+      },
+      "players": [
+        { "number": "1", "name": "Oscar Bear" },
+        { "number": "2", "name": "Jayden Bharathan" },
+        { "number": "3", "name": "Ethan Brian" },
+        { "number": "4", "name": "George Conway" },
+        { "number": "5", "name": "Liam James" },
+        { "number": "6", "name": "Alex Summers" },
+        { "number": "7", "name": "Luca Amato" },
+        { "number": "8", "name": "Oscar Turpin" },
+        { "number": "9", "name": "Fletcher Illet" },
+        { "number": "10", "name": "Alex Protsenko" },
+        { "number": "11", "name": "Dylan Clark" },
+        { "number": "16", "name": "Albert Myers" },
+        { "number": "17", "name": "George Myers" },
+        { "number": "18", "name": "Charlie Eagle" },
+        { "number": "20", "name": "Joe Bishop" }
+      ]
+    },
+    {
+      "slug": "u15",
+      "name": "U15",
+      "manager_1_position": "Manager",
+      "manager_1_name": "Steve Harris",
+      "manager_2_position": "Assistant Manager",
+      "manager_2_name": "Danny Wood",
+      "manager_3_position": "Coach",
+      "manager_3_name": "Giovanni De Dominicis",
+      "description": "",
+      "twitter_handle": "CityClarets",
+      "photo": "/photos/u15.jpg",
+      "fa_embeds": {
+        "table": { "lrcode": "220793549", "divisionseason": "401835304" },
+        "fixtures": { "lrcode": "954012648", "divisionseason": "401835304" }
+      },
+      "players": [
+        { "number": "1", "name": "Josh Wilson" },
+        { "number": "3", "name": "James Farrow" },
+        { "number": "4", "name": "Lewis Hayes" },
+        { "number": "5", "name": "Henry Obeng" },
+        { "number": "6", "name": "Henry Hawkins" },
+        { "number": "7", "name": "Ben Steadman" },
+        { "number": "8", "name": "George Harris" },
+        { "number": "9", "name": "Luke Smith" },
+        { "number": "10", "name": "Charlie George" },
+        { "number": "11", "name": "Thanasis Karamitsios" },
+        { "number": "12", "name": "Owen Lutete" },
+        { "number": "14", "name": "Beau Pelosi" },
+        { "number": "15", "name": "Max Olley" },
+        { "number": "16", "name": "Alex Tsvetkov" },
+        { "number": "17", "name": "Zach Lund" },
+        { "number": "18", "name": "Joel Bruton" }
+      ],
+      "sponsors": [
+        {
+          "name": "Earlstoke Laundry Services",
+          "logo": "/logos/earlstoke.jpg",
+          "url": "https://www.earlstokelaundry.co.uk"
+        },
+        {
+          "name": "Carvosso Curtains and Soft Furnishings",
+          "logo": "/logos/carvosso.jpg",
+          "url": "http://www.carvossocurtains.co.uk"
+        },
+        {
+          "name": "HCH",
+          "logo": "/logos/hch.jpg",
+          "url": "http://www.hch-heating.com"
+        }
+      ]
+    },
+    {
+      "slug": "u16",
+      "name": "U16",
+      "manager_1_position": "Manager",
+      "manager_1_name": "Graham Lodge",
+      "manager_2_position": "Assistant Manager",
+      "manager_2_name": "Darren Claydon",
+      "description": "",
+      "photo": "/photos/u16.jpg",
+      "fa_embeds": {
+        "table": { "lrcode": "876822108", "divisionseason": "204372345" },
+        "fixtures": { "lrcode": "904371404", "divisionseason": "204372345" }
+      },
+      "players": [
+        { "number": "13", "name": "Alfie Fitzearle" },
+        { "number": "5", "name": "Billy Marchant" },
+        { "number": "4", "name": "Cabel Adesanya" },
+        { "number": "18", "name": "Charlie Tait" },
+        { "number": "9", "name": "Emmanuel Shana" },
+        { "number": "7", "name": "Freddie Dewar" },
+        { "number": "2", "name": "Oliver Lodge" },
+        { "number": "16", "name": "Toby Ozono" },
+        { "number": "14", "name": "Kian McClement" },
+        { "number": "12", "name": "Taylor Legg" },
+        { "number": "15", "name": "Josh Graham" },
+        { "number": "11", "name": "William Patience" },
+        { "number": "17", "name": "Leo Easter" },
+        { "number": "10", "name": "George Briton-Watkins" },
+        { "number": "3", "name": "Josh Parrack" },
+        { "number": "8", "name": "Noah Smith" },
+        { "number": "22", "name": "Teddy Packer" },
+        { "number": "21", "name": "Bobby Packer" }
+      ]
+    },
+    {
+      "slug": "u18",
+      "name": "U18",
+      "manager_1_position": "Manager",
+      "manager_1_name": "Marc Holland",
+      "manager_2_position": "Assistant Manager",
+      "manager_2_name": "Steve Morritt",
+      "fa_embeds": {
+        "table": { "lrcode": "730661554", "divisionseason": "623044315" },
+        "fixtures": { "lrcode": "120203152", "divisionseason": "623044315" }
+      }
+    }
+  ]
+}

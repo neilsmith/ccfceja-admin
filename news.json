@@ -1,0 +1,22 @@
+{
+  "news": [
+    {
+      "slug": "1",
+      "title": "U12 Open Training Sessions",
+      "content": "<p>Our CCYFC U12 team are hosting open training on Saturdays with a focus on preparation & invitations to trials for the next U13 EJA squad 23/24 season.</p><p><a href=\"/contact\">Contact us</a> to book a space.</p>",
+      "author": "Jamie",
+      "day": "12",
+      "month": "Feb",
+      "image": "/news_1.jpg"
+    },
+    {
+      "slug": "2",
+      "title": "Join us for RACE NIGHT",
+      "content": "<p>We are holding our annual racenight on Friday 24th March. If you would like to to join us or make a donation please get in touch. Tickets and more information <a href=\"/contact\">available here</a>.</p>",
+      "author": "Sarah",
+      "day": "18",
+      "month": "Feb",
+      "image": "/news_2.jpg"
+    }
+  ]
+}
