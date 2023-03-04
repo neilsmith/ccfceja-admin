@@ -4,4 +4,7 @@ Rails.application.routes.draw do
     resources :sponsors
     resources :news_articles
   end
+
+  resources :news_articles, only: [:index]
+  resources :teams, only: [:index]
 end

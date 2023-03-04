@@ -6,6 +6,6 @@ class Admin::NewsArticlesController < Admin::BaseController
   end
 
   def clean_params
-    params.require(:news_article).permit(:title, :author, :published_at, :content)
+    params.require(:news_article).permit(:title, :author, :published_at, :content, :image)
   end
 end
