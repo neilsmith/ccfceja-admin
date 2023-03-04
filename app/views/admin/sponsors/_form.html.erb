@@ -1,0 +1,27 @@
+<div class="my-3 flex flex-col">
+  <%= f.label :name, "Name", class: "uppercase text-xs font-light mb-1" %>
+  <%= f.text_field :name, class: "w-full lg:w-1/2" %>
+</div>
+
+<div class="my-3 flex flex-col">
+  <%= f.label :url, "Website Url", class: "uppercase text-xs font-light mb-1" %>
+  <%= f.text_field :url, class: "w-full lg:w-1/2" %>
+  <p class="text-gray-600 uppercase text-xs font-light mt-1">Start with http:// or https://</p>
+</div>
+
+<div class="my-3 flex flex-col w-1/2">
+  <%= f.label :team_id, "Team", class: "uppercase text-xs font-light mb-1" %>
+  <%= f.select :team_id, [["Please Select", nil]] + Team.all.pluck(:name, :id), class: "select w-full max-w-xs" %>
+</div>
+
+<div class="my-3 flex flex-col">
+  <%= f.label :image, "Image", class: "uppercase text-xs font-light mb-1" %>
+  <% if @record.image.present? %>
+    <div class="avatar">
+      <div class="w-32 rounded">
+        <%= image_tag @record.image %>
+      </div>
+    </div>
+  <% end %>
+  <%= f.file_field :image, class: "file-input w-full lg:w-1/2" %>
+</div>

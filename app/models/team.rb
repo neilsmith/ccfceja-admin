@@ -11,6 +11,8 @@ class Team < ApplicationRecord
 
   def players_as_paragraph
     players.join("\n")
+  rescue
+    nil
   end
 
   def players_as_paragraph=(text)
