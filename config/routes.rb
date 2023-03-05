@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "/", to: redirect("/admin")
+
   get "/login" => "auth0#login"
   get "/auth/auth0/callback" => "auth0#callback"
   get "/auth/failure" => "auth0#failure"
