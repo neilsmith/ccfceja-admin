@@ -1,4 +1,8 @@
 class Admin::TeamsController < Admin::BaseController
+  def index
+    @records = Team.order(:slug).all
+  end
+
   private
 
   def model
