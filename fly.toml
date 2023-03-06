@@ -5,6 +5,10 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
+[mounts]
+  source="ccfceja_data"
+  destination="/data"
+
 [build]
   [build.args]
     BUILD_COMMAND = "bin/rails fly:build"
@@ -15,10 +19,6 @@ processes = []
 
 [env]
   PORT = "8080"
-
-[mounts]
-  source="ccfceja_data"
-  destination="/data"
 
 [experimental]
   auto_rollback = true
