@@ -22,6 +22,7 @@ json.teams @teams do |team|
     end
   end
 
+  json.twitter_handle team.twitter_handle if team.twitter_handle.present?
   json.players team.players.map { |p| {name: p.strip} } if team.players&.any?
   json.team_photo url_for(team.team_photo) if team.team_photo.present?
 end
