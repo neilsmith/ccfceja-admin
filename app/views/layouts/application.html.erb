@@ -60,6 +60,7 @@
         <input id="primary-nav-bar" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col p-6">
           <!-- Page content here -->
+          <%= render partial: "flash" %>
           <%= yield %>
         </div>
 
@@ -76,6 +77,9 @@
               </li>
               <li>
                 <%= link_to "Sponsors", admin_sponsors_path %>
+              </li>
+              <li>
+                <%= button_to 'Publish Site', admin_publications_path, method: :post, data: { turbo: false }, class: "btn btn-primary" %>
               </li>
             </ul>
           </div>

@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     resources :teams
     resources :sponsors
     resources :news_articles
+    resource :publications, only: [:create]
   end
 
   resources :news_articles, only: [:index]
