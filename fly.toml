@@ -16,6 +16,10 @@ processes = []
 [env]
   PORT = "8080"
 
+[mounts]
+  source="ccfceja_data"
+  destination="/data"
+
 [experimental]
   auto_rollback = true
 
