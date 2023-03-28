@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     resources :teams
     resources :sponsors
     resources :news_articles
+    resources :videos
     resource :publications, only: [:create]
   end
 
